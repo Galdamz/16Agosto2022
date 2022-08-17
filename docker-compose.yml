@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  php-nginx:
+    image: trafex/php-nginx
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./src:/var/www/html
